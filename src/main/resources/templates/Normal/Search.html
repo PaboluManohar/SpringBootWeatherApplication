@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <title>Find Weather</title>
+</head>
+<body>
+
+<style>
+    body{
+	background: #e2e2e2;
+}
+
+.my-primary{
+	background: #008491;
+}
+
+.banner{
+	width:100%;
+	height:100vh;
+	background:linear-gradient(rgba(0,0,0,0.93),rgba(0,0,0,0.8)) ,url(../img/two.png) ;
+	background-size:cover;
+	color: white;
+}
+
+.my-card{
+	padding: 20px;
+	background: white;
+	border-radius: 2px solid #008491;
+	border-radius: 20px
+}
+
+</style>
+
+<section class="banner d-flex justify-content-center align-items-center">
+    <div class="row">
+        <div class="col-12">
+            <div class="text-center mb-4">
+                <h1 class="font-weight-bold" style="font-size: 3em;">Find Your City Weather</h1>
+            </div>
+            <div class="col-12">
+                <div class="row justify-content-center align-items-center">
+                    <form action="/weather/data" class="text-center form-inline" method="post">
+                        <div class="form-group mx-sm-3 mb-2">
+                            <input type="text" class="form-control" id="city" name="city" value=" "
+                                   placeholder="Enter city to search">
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Get Weather Details</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
